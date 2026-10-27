@@ -1,0 +1,231 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Conheça o Filipe Sushi. Explore nossa apresentação, galeria e entre em contato.">
+    <meta name="theme-color" content="#b5121b">
+
+    <title>Filipe Sushi | Uma experiência japonesa</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header class="header" id="inicio">
+        <a class="logo" href="#inicio" aria-label="Filipe Sushi - início">
+            <span class="logo-main">FILIPE</span>
+            <span class="logo-sub">SUSHI <span>鮨</span></span>
+        </a>
+
+        <button class="menu-toggle" id="menu-toggle"
+            aria-label="Abrir menu" aria-expanded="false"
+            aria-controls="nav-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav class="nav" id="nav-menu">
+            <a href="#inicio">Início</a>
+            <a href="#experiencia">Experiência</a>
+            <a href="#galeria">Galeria</a>
+            <a href="#contato">Contato</a>
+        </nav>
+
+        <a class="header-cta" href="#contato">Fale conosco <span>↗</span></a>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <span class="eyebrow">NOSSO UNIVERSO</span>
+
+                <h1>Tradição em cada <span>detalhe.</span></h1>
+
+                <p>
+                    Uma experiência inspirada na culinária japonesa,
+                    com sabores que merecem ser apreciados.
+                </p>
+
+                <a class="button button-red" href="#contato">
+                    Conheça o Filipe Sushi <span>→</span>
+                </a>
+
+                <div class="hero-note">
+                    <span class="note-line"></span>
+                    <span>Uma experiência para apreciar</span>
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <img
+                    src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c?auto=format&fit=crop&w=1200&q=85"
+                    alt="Seleção ilustrativa de sushi japonês"
+                    fetchpriority="high"
+                >
+                <div class="image-label">
+                    <span>和食</span>
+                    <p>Culinária japonesa</p>
+                </div>
+            </div>
+
+            <span class="hero-decoration" aria-hidden="true">鮨</span>
+        </section>
+
+        <section class="experience section-padding" id="experiencia">
+            <div class="section-heading">
+                <div>
+                    <span class="eyebrow">NOSSA ESSÊNCIA</span>
+                    <h2>Uma experiência <span>especial.</span></h2>
+                </div>
+
+                <p>
+                    Um espaço para apresentar o restaurante, sua identidade
+                    e a experiência que deseja compartilhar com seus clientes.
+                </p>
+            </div>
+
+            <div class="experience-grid">
+                <article class="experience-card">
+                    <span class="card-number">01</span>
+                    <span class="card-icon" aria-hidden="true">◈</span>
+                    <h3>Sabores japoneses</h3>
+                    <p>Um convite para conhecer a culinária japonesa.</p>
+                </article>
+
+                <article class="experience-card">
+                    <span class="card-number">02</span>
+                    <span class="card-icon" aria-hidden="true">✳</span>
+                    <h3>Detalhes que encantam</h3>
+                    <p>Uma apresentação visual inspirada na cultura japonesa.</p>
+                </article>
+
+                <article class="experience-card">
+                    <span class="card-number">03</span>
+                    <span class="card-icon" aria-hidden="true">♡</span>
+                    <h3>Momentos especiais</h3>
+                    <p>Um espaço para descobrir o restaurante e entrar em contato.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="gallery section-padding" id="galeria">
+            <div class="section-heading gallery-heading">
+                <div>
+                    <span class="eyebrow">NOSSA GALERIA</span>
+                    <h2>Um convite aos <span>sentidos.</span></h2>
+                </div>
+
+                <p>
+                    Imagens ilustrativas de culinária japonesa.
+                    Elas deverão ser substituídas ou aprovadas pelo restaurante
+                    antes da publicação definitiva.
+                </p>
+            </div>
+
+            <div class="gallery-grid">
+                <figure class="gallery-item gallery-large">
+                    <img
+                        src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c?auto=format&fit=crop&w=1000&q=85"
+                        alt="Prato ilustrativo de sushi"
+                        loading="lazy"
+                    >
+                    <figcaption>
+                        <span>01 / GALERIA</span>
+                        <h3>Sushi</h3>
+                    </figcaption>
+                </figure>
+
+                <figure class="gallery-item">
+                    <img
+                        src="https://images.unsplash.com/photo-1579584425555-c3ce17fd4351?auto=format&fit=crop&w=800&q=85"
+                        alt="Seleção ilustrativa de peças japonesas"
+                        loading="lazy"
+                    >
+                    <figcaption>
+                        <span>02 / GALERIA</span>
+                        <h3>Seleção japonesa</h3>
+                    </figcaption>
+                </figure>
+
+                <figure class="gallery-item">
+                    <img
+                        src="https://images.unsplash.com/photo-1553621042-f6e147245754?auto=format&fit=crop&w=800&q=85"
+                        alt="Composição ilustrativa de culinária japonesa"
+                        loading="lazy"
+                    >
+                    <figcaption>
+                        <span>03 / GALERIA</span>
+                        <h3>Sabores</h3>
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="contact" id="contato">
+            <div class="contact-content">
+                <span class="eyebrow">VAMOS CONVERSAR?</span>
+                <h2>Conheça o <span>Filipe Sushi.</span></h2>
+                <p>
+                    Entre em contato com o restaurante para consultar
+                    informações, atendimento e opções disponíveis.
+                </p>
+
+                <!-- Adicione o link real de contato após confirmação. -->
+                <a class="button button-light" href="#informacoes">
+                    Ver informações <span>↓</span>
+                </a>
+            </div>
+
+            <div class="contact-side" id="informacoes">
+                <div class="contact-row">
+                    <span class="contact-icon" aria-hidden="true">⌖</span>
+                    <div>
+                        <h3>Localização</h3>
+                        <p>Endereço a confirmar com o responsável.</p>
+                    </div>
+                </div>
+
+                <div class="contact-row">
+                    <span class="contact-icon" aria-hidden="true">◷</span>
+                    <div>
+                        <h3>Horário de atendimento</h3>
+                        <p>Consulte o horário diretamente com o restaurante.</p>
+                    </div>
+                </div>
+
+                <div class="contact-row">
+                    <span class="contact-icon" aria-hidden="true">◎</span>
+                    <div>
+                        <h3>Contato</h3>
+                        <p>WhatsApp e Instagram a confirmar.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <a class="logo footer-logo" href="#inicio">
+            <span class="logo-main">FILIPE</span>
+            <span class="logo-sub">SUSHI <span>鮨</span></span>
+        </a>
+
+        <p>Uma experiência inspirada na culinária japonesa.</p>
+
+        <a href="#inicio" class="back-top">Voltar ao topo ↑</a>
+
+        <span class="footer-copy">
+            © <span id="year"></span> Filipe Sushi
+        </span>
+    </footer>
+</body>
+</html>
