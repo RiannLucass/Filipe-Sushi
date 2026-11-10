@@ -62,3 +62,42 @@ Object.entries(mensagensWhatsApp).forEach(([id, mensagem]) => {
         botao.href = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensagem)}`;
     }
 });
+
+// MODAL POLÍTICA DE PRIVACIDADE
+
+const abrirPolitica = document.querySelector("#abrir-politica");
+const fecharPolitica = document.querySelector("#fechar-politica");
+const modalPolitica = document.querySelector("#privacy-modal");
+
+function abrirModal() {
+    modalPolitica.classList.add("active");
+    modalPolitica.setAttribute("aria-hidden", "false");
+    document.body.style.overflow = "hidden";
+}
+
+function fecharModal() {
+    modalPolitica.classList.remove("active");
+    modalPolitica.setAttribute("aria-hidden", "true");
+    document.body.style.overflow = "";
+}
+
+abrirPolitica.addEventListener("click", (event) => {
+    event.preventDefault();
+    abrirModal();
+});
+
+fecharPolitica.addEventListener("click", fecharModal);
+
+// Fecha ao clicar fora da janela
+modalPolitica.addEventListener("click", (event) => {
+    if (event.target === modalPolitica) {
+        fecharModal();
+    }
+});
+
+// Fecha ao pressionar ESC
+document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && modalPolitica.classList.contains("active")) {
+        fecharModal();
+    }
+});

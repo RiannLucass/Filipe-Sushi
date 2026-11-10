@@ -488,7 +488,6 @@ h2 span {
   grid-row: 1 / 3;
 }
 
-
 .contact-panel {
   padding: 25px 9%;
   display: flex;
@@ -574,9 +573,95 @@ h2 span {
   color: var(--red-light);
 }
 
-.footer p {
+.footer a,
+p {
   color: #bcb6b0;
   font-size: 0.68rem;
+}
+
+/* MODAL POLÍTICA DE PRIVACIDADE */
+
+.privacy-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(5px);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 20px;
+  z-index: 9999;
+
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s ease;
+}
+
+.privacy-modal.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.privacy-content {
+  position: relative;
+  background: #f8f4ef;
+  color: #151515;
+
+  width: 100%;
+  max-width: 650px;
+  max-height: 85vh;
+
+  overflow-y: auto;
+  padding: 40px;
+
+  border-top: 4px solid #bd171e;
+  border-radius: 5px;
+
+  transform: translateY(20px);
+  transition: 0.3s ease;
+}
+
+.privacy-modal.active .privacy-content {
+  transform: translateY(0);
+}
+
+.privacy-close {
+  position: absolute;
+  top: 12px;
+  right: 18px;
+
+  background: none;
+  border: none;
+
+  font-size: 32px;
+  color: #bd171e;
+  cursor: pointer;
+}
+
+.privacy-eyebrow {
+  color: #bd171e;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.privacy-content h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  margin: 12px 0 25px;
+}
+
+.privacy-content h3 {
+  font-size: 1rem;
+  margin: 25px 0 10px;
+}
+
+.privacy-content p {
+  font-size: 0.9rem;
+  line-height: 1.7;
+  margin-bottom: 15px;
 }
 
 /* ========================================
@@ -696,6 +781,15 @@ h2 span {
 @media (max-width: 700px) {
   html {
     scroll-padding-top: 70px;
+  }
+
+  .privacy-content {
+    padding: 30px 22px;
+    max-height: 85vh;
+  }
+
+  .privacy-content h2 {
+    font-size: 1.6rem;
   }
 
   /* CABEÇALHO */
@@ -1062,7 +1156,6 @@ h2 span {
   .footer p {
     font-size: 0.68rem;
   }
-
 }
 
 /* REMOVE COMPLETAMENTE O BRILHO DA IMAGEM PRINCIPAL */
